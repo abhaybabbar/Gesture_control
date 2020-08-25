@@ -7,7 +7,7 @@ video.set(3, 640)     #id no 3 = width
 video.set(4, 480)     #id no 4 = height
 video.set(10, 100)    #id no 10 = brightness, we are changing brightness
 
-lower_red = np.array([0,50,50])
+lower_red = np.array([0,50,50])          #colour can be changed
 upper_red = np.array([10,255,255])
 lower_red1 = np.array([170,50,50])
 upper_red1 = np.array([180,255,255])
@@ -19,7 +19,6 @@ while True:
     success, img = video.read()
     img = cv2.flip(img, 1)
     hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
-    #frame_threshed = cv2.inRange(hsv, red_min, red_max)
     mask0 = cv2.inRange(hsv, lower_red, upper_red)
     mask1 = cv2.inRange(hsv, lower_red, upper_red)
     mask = mask0+mask1
