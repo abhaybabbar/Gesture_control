@@ -5,6 +5,7 @@ The program is detecting colour red, and the object having the maximum area{ hav
 You can change the colour, by making changes in the code. { line 10 to 13 of code }
 
 Libraries used are:
+
 cv2
 
 numpy
