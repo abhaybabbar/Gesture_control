@@ -6,5 +6,7 @@ You can change the colour, by making changes in the code. { line 10 to 13 of cod
 
 Libraries used are:
 cv2
+
 numpy
+
 pyautogui
